@@ -1,0 +1,240 @@
+body {
+    background-color: black;
+    color:white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+html, body {
+    margin:0px;
+    height:100%;
+  }
+
+.spotify {
+    display:flex;
+    flex-direction:row ;
+}
+  
+.sidebar {
+    background-color: black;
+    height: 100%;
+    width:353px;
+}
+
+.main {
+    background-color:rgb(18, 18, 18) ;
+    display:flex;
+    flex-direction: column;
+    margin: 20px 0px 5px 8px;
+    
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.logo , .navlink {
+    height: 44px;
+    width: 353px;
+}
+.library {
+    height:316px;
+    width: 337px;
+    margin-left: 8px;
+    padding-left: 8px;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+.library:hover{
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+
+}
+
+#playlist , #podcast {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width:310px;
+    border: 0.5px solid rgb(60, 59, 59) ;
+    border-radius: 4%;
+    background-color: rgb(36, 36, 36);
+    padding: 14px;
+}
+
+#yourlibrary {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.cookies {
+    height: 250px;
+    text-align: calc(10px);
+    padding: 10px;
+    background-color: rgb(18, 18, 18);
+    margin-left: 8px;
+}
+.navbar {
+    display:flex;
+    width:100%;
+    background-color: #000;
+    height:64px;
+    padding: 14px 8px;
+    margin-right: 0%;
+}
+
+#forward , #back {
+    color:#7a7a7a;
+    cursor: not-allowed;
+    width:34px;
+    height:34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border:0px;
+    background-color: #090909;
+}
+.toolbar {
+    display:flex;
+    flex-direction: row;
+    justify-content:end;
+    width:100%;
+    margin: 0px 8px 0px 8px;
+    padding: 0px 8px 0px 8px;
+    background-color: rgb(16, 16, 16);
+}
+
+.tool {
+    padding: 0px 8px 0px 8px;
+}
+#login {
+    border-radius: 25%;
+    height: 40px;
+}
+.music {
+    position:absolute;
+    top: 90px;
+    left:380px;
+    height:360px;
+    width:1100px;
+    background-color: rgb(27,27,27);
+}
+.spotifyplaylist {
+    display:flex;
+    justify-content: space-between;
+    padding:6px;
+}
+
+.music .photo{
+    display:flex;
+    gap:20px;
+    overflow:hidden;
+
+}
+.music .photo .mine {
+    min-width: 140px;
+    width:160px;
+    margin:15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 00.4s;
+}
+
+.music .photo .mine :hover{
+    background-color: #252525;
+}
+.music .photo .mine img{
+    width:100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.music .photo .mine .play{
+    position:relative;
+}
+.music .photo .mine .play .fa{
+    position:absolute;
+    right:10px;
+    top:-60px;
+    padding:18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 00.4s;
+}
+.music .photo .mine:hover .play .fa{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.music .photo .mine h5{
+    color: white;
+    font-size:14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.music .photo .mine p{
+    color:#989898;
+    font-size:12px;
+    line-height:20px;
+    font-weight: 500;
+}
+.music .spotifyplaylist a{
+    color: #b3b3b3;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease 00.4s;
+}
+.music .spotifyplaylist a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.music .spotifyplaylist #tag{
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+}
+.toolbar a{
+    color: #b3b3b3;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease 00.4s;
+}
+.toolbar a:hover{
+    color: white;
+}
+.spotify .sidebar .main{
+    font-size: 16px;
+    font-weight: 600;
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: all ease 00.4s;
+
+}
+.spotify .sidebar .main a:hover{
+    color: white;
+    text-decoration: underline;
+}
+#yourlibrary{
+    font-size: 20px;
+    font-weight: 600;
+    color: #b3b3b3;
+}
+#yourlibrary:hover{
+    color: white;
+    text-decoration: underline;
+}
